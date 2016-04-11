@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PracticeFlow">
+
+    <FrameLayout
+        android:layout_width="fill_parent"
+        android:layout_height="56dp"
+        android:background="#43A047"
+        android:id="@+id/frameLayout2"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+        <ImageButton
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:id="@+id/button_back_practice_flow"
+            android:src="@drawable/ic_arrow_back_white_24dp"
+            android:layout_gravity="left|center_vertical"
+            android:background="#43A047"
+            android:layout_margin="10dp" />
+
+        <ImageButton
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:id="@+id/button_help_create_flow"
+            android:src="@drawable/ic_help_outline_white_24dp"
+            android:layout_gravity="center_vertical|right"
+            android:background="#43A047"
+            android:onClick="helpClick"
+            android:layout_marginRight="68dp" />
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_mode_edit_white_24dp"
+            android:id="@+id/practice_flow_edit"
+            android:background="#43A047"
+            android:layout_gravity="right|center_vertical"
+            android:layout_margin="10dp" />
+
+
+    </FrameLayout>
+
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right|bottom"
+        android:id="@+id/tableLayout"
+        android:layout_centerVertical="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:minHeight="133dp"
+            android:layout_column="0"
+            android:layout_row="0">
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:id="@+id/r0c0text_practice"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:layout_column="0"
+                android:background="@drawable/cell_border"
+                android:layout_weight="1"
+                android:gravity="center_vertical|center_horizontal"
+                android:layout_gravity="center" />
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:id="@+id/r0c1text_practice"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:layout_column="1"
+                android:layout_weight="1"
+                android:background="@drawable/cell_border"
+                android:gravity="center_vertical|center_horizontal"
+                android:layout_gravity="center" />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:minHeight="133dp"
+            android:layout_column="0"
+            android:layout_row="1">
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:id="@+id/r1c0text_practice"
+                android:layout_weight="1"
+                android:background="@drawable/cell_border"
+                android:layout_column="0"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:gravity="center_vertical|center_horizontal"
+                android:textAlignment="center"
+                android:layout_gravity="center" />
+
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:id="@+id/r1c1text_practice"
+                android:layout_weight="1"
+                android:background="@drawable/cell_border"
+                android:layout_column="1"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:gravity="center_vertical|center_horizontal"
+                android:textAlignment="center"
+                android:layout_gravity="center" />
+
+        </TableRow>
+
+    </GridLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/linearLayout"
+        android:layout_below="@+id/tableLayout"
+        android:layout_centerHorizontal="true">
+
+        <Button
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:text="previous"
+            android:id="@+id/practice_flow_previous"
+            android:background="#43A047"
+            android:textColor="#ffff"
+            android:padding="15px"
+            android:onClick="prevFrame" />
+
+        <Button
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:text="next"
+            android:id="@+id/practice_flow_next"
+            android:background="#43A047"
+            android:textColor="#ffff"
+            android:padding="15px"
+            android:layout_marginLeft="5px"
+            android:onClick="nextFrame" />
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Total Count"
+        android:id="@+id/frameCount_practice"
+        android:layout_above="@+id/tableLayout"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Name"
+        android:id="@+id/practiceFlow_name"
+        android:textSize="35dp"
+        android:padding="10dp"
+        android:layout_above="@+id/frameCount_practice"
+        android:layout_centerHorizontal="true" />
+
+</RelativeLayout>

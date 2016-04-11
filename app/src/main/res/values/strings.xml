@@ -1,0 +1,27 @@
+<resources>
+    <string name="app_name">Movement Notation</string>
+
+    <string name="action_settings">Settings</string>
+    <string name="welcomeText">Welcome!</string>
+    <string name="flowButtonText">Flows</string>
+    <string name="addTechniqueButton">Add Technique</string>
+    <string name="flow_button_text">Flows</string>
+    <string name="technique_button_text">Techniques</string>
+    <string name="practice_button_text">Practice</string>
+    <string name="title_activity_techniques">TechniquesActivity</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="practice_title_text">Practices</string>
+    <string name="deleteMessage_alert">Would You Like to Delete?</string>
+    <string name="title_activity_main2">Main2Activity</string>
+    <string name="title_activity_practice_flow">practiceFlow</string>
+    <string name="view_flow_start">Start</string>
+    <string name="title_activity_edit_flow">EditFlow</string>
+    <string name="title_activity_edit_flow_properties">editFlowProperties</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="intro_message2">Welcome to \n Movement Notation!</string>
+    <string name="intro_desc">An easy and fun way to log your movements!</string>
+    <string name="practice_flow_label">Practice Flow</string>
+</resources>

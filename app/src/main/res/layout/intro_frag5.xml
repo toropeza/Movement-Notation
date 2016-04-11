@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:padding="40dp"
+        android:background="@color/fab_material_white"
+        android:layout_centerHorizontal="true">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="That&apos;s it!"
+            android:id="@+id/textView6"
+            android:textStyle="bold"
+            android:textSize="50sp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="60dp"
+            android:gravity="center_horizontal" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Get Started!"
+            android:id="@+id/getStartedButton"
+            android:layout_marginTop="73dp"
+            android:background="#43A047"
+            android:textColor="#FFFF"
+            android:padding="5dp"
+            android:layout_below="@+id/textView6"
+            android:layout_centerHorizontal="true"
+            android:onClick="start" />
+
+
+    </RelativeLayout>
+
+</RelativeLayout>

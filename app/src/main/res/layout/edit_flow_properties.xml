@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".EditFlowProperties">
+
+    <FrameLayout
+        android:layout_width="fill_parent"
+        android:layout_height="56dp"
+        android:background="#43A047"
+        android:id="@+id/frameLayout2"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+        <ImageButton
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:id="@+id/editFlowProp_back"
+            android:src="@drawable/ic_arrow_back_white_24dp"
+            android:layout_gravity="left|center_vertical"
+            android:background="#43A047"
+            android:layout_margin="10px" />
+
+    </FrameLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/frameLayout2"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="10dp"
+        android:padding="20dp"
+        android:background="#FFFF"
+        android:textAlignment="center"
+        android:gravity="center_horizontal">
+
+        <EditText
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/editFlowProp_name"
+            android:layout_marginTop="38dp"
+            android:layout_below="@+id/frameLayout2"
+            android:layout_centerHorizontal="true" />
+
+        <EditText
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/editFlowProp_description"
+            android:layout_below="@+id/editFlowProp_name"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="35dp" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Done"
+            android:id="@+id/editFlowProp_done"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"
+            android:background="#43A047"
+            android:textColor="#FFFF" />
+
+    </LinearLayout>
+
+</RelativeLayout>

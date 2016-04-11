@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        jar="/Users/thomasoropeza/Documents/Movement-Notation/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.2.1/jars/classes.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="4486e953d1f35f8ccab098b1dd67146366d5f731">
+        <dex dex="/Users/thomasoropeza/Documents/Movement-Notation/app/build/intermediates/pre-dexed/release/classes-446aac6ec62537a5b2fc479aa486ccc74de97ae8.jar" />
+    </item>
+    <item
+        jar="/Users/thomasoropeza/Documents/Movement-Notation/app/build/intermediates/exploded-aar/com.github.shell-software/fab/1.1.1/jars/classes.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="cf52449fa39e6e61964c43f880ea827e0bcc8c9c">
+        <dex dex="/Users/thomasoropeza/Documents/Movement-Notation/app/build/intermediates/pre-dexed/release/classes-63a042af6f29da7876575b949345e132388c89c5.jar" />
+    </item>
+    <item
+        jar="/Users/thomasoropeza/Documents/Movement-Notation/app/build/intermediates/exploded-aar/com.android.support/support-v4/22.2.1/jars/libs/internal_impl-22.2.1.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="c471eaaba13ff64f6e0383d1c30a9cdc9a97efeb">
+        <dex dex="/Users/thomasoropeza/Documents/Movement-Notation/app/build/intermediates/pre-dexed/release/internal_impl-22.2.1-ff20e157ef1cfa28f91d242843eef3efd0b0fc6e.jar" />
+    </item>
+    <item
+        jar="/Users/thomasoropeza/Documents/Movement-Notation/app/build/intermediates/exploded-aar/com.github.shell-software/viewmover/1.0.1/jars/classes.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="d065ab6e064a1398750b52b1108e52c6d5e77807">
+        <dex dex="/Users/thomasoropeza/Documents/Movement-Notation/app/build/intermediates/pre-dexed/release/classes-552bff8735df9abe9098472c7275adb2fa16af3a.jar" />
+    </item>
+    <item
+        jar="/Users/thomasoropeza/Documents/Movement-Notation/app/build/intermediates/exploded-aar/com.github.shell-software/uitools/1.0.0/jars/classes.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="841420e749b01799d17bf0a83cc6eb64dd8fa136">
+        <dex dex="/Users/thomasoropeza/Documents/Movement-Notation/app/build/intermediates/pre-dexed/release/classes-00d0d21f15a73c31cd7c0177829cdc7ec70eb636.jar" />
+    </item>
+    <item
+        jar="/Users/thomasoropeza/Library/Android/sdk/extras/android/m2repository/com/android/support/support-annotations/22.2.1/support-annotations-22.2.1.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="61a0ff5c29295ec56d7e0bd3d25d95dbf71b4b2b">
+        <dex dex="/Users/thomasoropeza/Documents/Movement-Notation/app/build/intermediates/pre-dexed/release/support-annotations-22.2.1-03d8a8ddc99638ae61503c87459593dc3b44c4c7.jar" />
+    </item>
+    <item
+        jar="/Users/thomasoropeza/Documents/Movement-Notation/app/build/intermediates/exploded-aar/com.android.support/support-v4/22.2.1/jars/classes.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="f8efd0096475e0daf054267b61544e10dc776503">
+        <dex dex="/Users/thomasoropeza/Documents/Movement-Notation/app/build/intermediates/pre-dexed/release/classes-360d3fe3c342777fb0815ad83b635744c9cd2d14.jar" />
+    </item>
+
+</items>

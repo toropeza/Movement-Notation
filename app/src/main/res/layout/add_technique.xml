@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:outlineProvider="paddedBounds">
+
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:id="@+id/nameLayout"
+        android:background="@color/background_material_light"
+        android:layout_marginTop="50dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="10dp">
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/nameLayout"
+        android:id="@+id/bodyLayout"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:layout_alignLeft="@+id/nameLayout"
+        android:layout_alignStart="@+id/nameLayout">
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/bodyLayout"
+        android:layout_alignLeft="@+id/bodyLayout"
+        android:layout_alignStart="@+id/bodyLayout"
+        android:layout_marginTop="19dp"
+        android:id="@+id/descriptionLayout">
+
+    </LinearLayout>
+
+
+    <FrameLayout
+        android:layout_width="fill_parent"
+        android:layout_height="56dp"
+        android:id="@+id/frameTop"
+        android:layout_alignParentTop="true"
+        android:background="#43A047">
+
+        <ImageButton
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:id="@+id/button_back_add_technique"
+            android:src="@drawable/ic_arrow_back_white_24dp"
+            android:layout_gravity="left|center_vertical"
+            android:background="#43A047"
+            android:layout_margin="10px" />
+    </FrameLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/frameTop"
+        android:background="#FFFF"
+        android:padding="20dp"
+        android:layout_margin="5dp">
+
+        <EditText
+            android:layout_width="fill_parent"
+            android:layout_height="100dp"
+            android:id="@+id/add_flow_descriptionText"
+            android:hint="Description.."
+            android:textStyle="italic"
+            android:layout_below="@+id/add_technique_radio_group"
+            android:layout_alignEnd="@+id/add_technique_radio_group" />
+
+        <RadioGroup
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/add_technique_radio_group"
+            android:orientation="horizontal"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center"
+            android:layout_below="@+id/add_technique_name"
+            android:layout_alignStart="@+id/add_technique_name"
+            android:layout_marginTop="32dp">
+
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Hand"
+                android:textSize="20dp"
+                android:layout_gravity="left"
+                android:layout_marginRight="5dp" />
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Arm"
+                android:textSize="20dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginRight="5dp" />
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Leg"
+                android:textSize="20dp"
+                android:layout_marginRight="5dp" />
+
+        </RadioGroup>
+
+        <EditText
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/add_technique_name"
+            android:textStyle="italic"
+            android:hint="Technique Name" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Add Technique"
+            android:id="@+id/add_technique_button"
+            android:layout_gravity="bottom"
+            android:background="#43A047"
+            android:textColor="#FFFF"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:layout_below="@+id/add_flow_descriptionText"
+            android:layout_centerHorizontal="true" />
+    </RelativeLayout>
+
+
+</RelativeLayout>

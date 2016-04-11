@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:outlineProvider="paddedBounds">
+
+
+    <LinearLayout
+        android:id="@+id/nameLayout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="50dp"
+        android:background="@color/background_material_light"
+        android:orientation="horizontal">
+
+    </LinearLayout>
+
+
+    <FrameLayout
+        android:layout_width="fill_parent"
+        android:layout_height="56dp"
+        android:layout_alignParentTop="true"
+        android:background="#43A047">
+
+
+        <ImageButton
+            android:id="@+id/button_back_add_flow"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_gravity="left|center_vertical"
+            android:layout_margin="10px"
+            android:background="#43A047"
+            android:src="@drawable/ic_arrow_back_white_24dp" />
+    </FrameLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="#FFFF"
+        android:layout_below="@+id/nameLayout"
+        android:layout_alignStart="@+id/nameLayout"
+        android:layout_alignParentLeft="true"
+        android:layout_margin="10dp"
+        android:padding="20dp">
+
+        <EditText
+            android:id="@+id/add_flow_name"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:hint="Flow Name"
+            android:textStyle="italic" />
+
+        <EditText
+            android:id="@+id/add_flow_descriptionText"
+            android:layout_width="fill_parent"
+            android:layout_height="100dp"
+            android:hint="Description.."
+            android:textStyle="italic" />
+
+        <Button
+            android:id="@+id/add_flow_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|center"
+            android:background="#43A047"
+            android:text="next"
+            android:textColor="#FFFF"
+            android:gravity="center_vertical|center_horizontal"
+            android:layout_margin="10dp" />
+
+    </LinearLayout>
+
+</RelativeLayout>

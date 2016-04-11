@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <FrameLayout
+        android:layout_width="fill_parent"
+        android:layout_height="56dp"
+        android:background="#43A047"
+        android:id="@+id/frameLayout2"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+        <ImageButton
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:id="@+id/button_help_edit_flow"
+            android:src="@drawable/ic_help_outline_white_24dp"
+            android:layout_gravity="center_vertical|right"
+            android:background="#43A047"
+            android:onClick="helpClick"
+            android:layout_marginRight="68dp" />
+
+        <ImageButton
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:id="@+id/editFlow_button_back"
+            android:src="@drawable/ic_arrow_back_white_24dp"
+            android:layout_gravity="left|center_vertical"
+            android:background="#43A047"
+            android:onClick="backButtonClick"
+            android:layout_margin="10px" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Done"
+            android:id="@+id/editFlow__done"
+            android:layout_gravity="right|center_vertical"
+            android:textColor="#FFFF"
+            android:background="#43A047"
+            android:onClick="doneClick" />
+    </FrameLayout>
+
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right|bottom"
+        android:id="@+id/editFlow_frame"
+        android:layout_centerVertical="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:minHeight="133dp"
+            android:layout_row="0"
+            android:layout_column="0">
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:id="@+id/editFlow_r0c0text"
+                android:layout_weight="1"
+                android:layout_column="0"
+                android:background="@drawable/cell_border"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textAlignment="center"
+                android:gravity="center_vertical|center_horizontal"
+                android:layout_gravity="center" />
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:id="@+id/editFlow_r0c1text"
+                android:layout_column="1"
+                android:layout_weight="1"
+                android:layout_gravity="center"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:background="@drawable/cell_border"
+                android:gravity="center_vertical|center_horizontal" />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:minHeight="133dp"
+            android:layout_row="1"
+            android:layout_column="0">
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:id="@+id/editFlow_r1c0text"
+                android:layout_weight="1"
+                android:layout_gravity="center"
+                android:background="@drawable/cell_border"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:gravity="center_vertical|center_horizontal"
+                android:layout_column="0" />
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:id="@+id/editFlow_r1c1text"
+                android:layout_weight="1"
+                android:layout_gravity="center"
+                android:background="@drawable/cell_border"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:gravity="center_vertical|center_horizontal"
+                android:layout_column="1" />
+
+        </TableRow>
+
+    </GridLayout>
+
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/linearLayout"
+        android:layout_below="@+id/tableLayout"
+        android:layout_centerHorizontal="true">
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Large Text"
+        android:id="@+id/editFlow_name"
+        android:textSize="35dp"
+        android:padding="10dp"
+        android:layout_below="@+id/frameLayout2"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Medium Text"
+        android:id="@+id/editFlow_frameCount"
+        android:layout_above="@+id/editFlow_frame"
+        android:layout_marginBottom="5dp"
+        android:layout_centerHorizontal="true" />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editFlow_frame"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/linearLayout2"
+        android:layout_marginTop="5dp">
+
+        <Button
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:text="previous"
+            android:id="@+id/editFlow_previous"
+            android:background="#43A047"
+            android:textColor="#ffff"
+            android:padding="15px"
+            android:onClick="prevFrame"
+            android:layout_marginRight="5dp" />
+
+        <Button
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:text="Delete"
+            android:id="@+id/editFlow_DeleteFrame"
+            android:background="#fbe3052a"
+            android:textColor="#ffff"
+            android:padding="15px"
+            android:onClick="deleteFrame" />
+
+        <Button
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:text="next"
+            android:id="@+id/editFlow__next"
+            android:background="#43A047"
+            android:textColor="#ffff"
+            android:padding="15px"
+            android:onClick="nextFrame"
+            android:layout_marginLeft="5dp" />
+    </LinearLayout>
+
+    <com.software.shell.fab.ActionButton
+        android:id="@+id/addFrame"
+        android:layout_width="wrap_content"
+        android:onClick="addFrame"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="@dimen/fab_margin"
+        android:layout_marginBottom="@dimen/fab_margin"
+
+        />
+
+
+</RelativeLayout>

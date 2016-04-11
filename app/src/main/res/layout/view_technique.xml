@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <FrameLayout
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="56dp"
+        android:layout_alignParentTop="true"
+        android:background="#43A047"
+        android:id="@+id/toolBar_viewTechnique">
+
+        <ImageButton
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:id="@+id/view_technique_back"
+            android:src="@drawable/ic_arrow_back_white_24dp"
+            android:layout_gravity="left|center_vertical"
+            android:background="#43A047"
+            android:layout_margin="10px" />
+
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_mode_edit_white_24dp"
+            android:id="@+id/view_technique_edit"
+            android:background="#43A047"
+            android:textSize="20sp"
+            android:layout_gravity="center_vertical|right"
+            android:layout_marginRight="38dp" />
+
+        <ImageButton
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:id="@+id/view_technique_delete"
+            android:src="@drawable/ic_delete_white_36dp"
+            android:layout_gravity="center_vertical|right"
+            android:background="#43A047" />
+
+
+    </FrameLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:background="@drawable/card"
+        android:layout_below="@+id/toolBar_viewTechnique"
+        android:layout_centerHorizontal="true"
+        android:gravity="center_horizontal"
+        android:layout_margin="8dp"
+        android:padding="10dp">
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="Name"
+            android:textSize="40sp"
+            android:id="@+id/technique_view_name"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:padding="7dp"
+            android:gravity="center_horizontal"
+            android:layout_margin="5dp" />
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="Body"
+            android:id="@+id/technique_view_body"
+            android:layout_gravity="center_horizontal"
+            android:layout_below="@+id/technique_view_name"
+            android:textSize="25sp"
+            android:padding="7dp"
+            android:gravity="center_horizontal"
+            android:layout_margin="5dp" />
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="Description"
+            android:id="@+id/technique_view_description"
+            android:layout_below="@+id/technique_view_body"
+            android:textSize="25sp"
+            android:padding="7dp"
+            android:layout_marginBottom="0dp"
+            android:layout_marginRight="5dp"
+            android:gravity="center_horizontal"
+            android:layout_margin="10dp" />
+    </LinearLayout>
+
+
+</RelativeLayout>
